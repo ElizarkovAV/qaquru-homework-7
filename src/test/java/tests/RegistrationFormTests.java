@@ -2,23 +2,27 @@ package tests;
 
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
+import utils.RandomDataUtil;
 
 public class RegistrationFormTests extends TestBase {
 
     RegistrationPage registrationPage = new RegistrationPage();
+    RandomDataUtil random = new RandomDataUtil();
 
-    String name = "User";
-    String lastName = "Testov";
-    String email = "test@email.com";
-    String mobile = "7999999999";
-    String subject = "Computer";
-    String address = "Default city 2 Pushkin's Street";
-    String state = "Haryana";
-    String city = "Karnal";
-    String gender = "Female";
-    String hobby = "Reading";
-    String date = "26 April,1992";
-    String picName = "pic.jpg";
+    String name = random.getRandomFirstName(),
+            lastName = random.getRandomLastName(),
+            email = random.getRandomEmail(),
+            mobile = random.getRandomMobile(),
+            subject = random.getRandomSubject(),
+            address = random.getRandomAddress(),
+            state = random.getRandomState(),
+            city = random.getRandomCity(state),
+            gender = random.getRandomGender(),
+            hobby = random.getRandomHobby(),
+            day = random.getRandomDay(),
+            month = random.getRandomMonth(),
+            year = random.getRandomYear(),
+            picture = random.getRandomPicture();
 
     @Test
     void fillRegistrationFormTest() {
@@ -29,10 +33,10 @@ public class RegistrationFormTests extends TestBase {
                 .setEmail(email)
                 .setGender(gender)
                 .setUserNumber(mobile)
-                .setDateOfBirth("26", "April", "1992")
+                .setDateOfBirth(day, month, year)
                 .setSubject(subject)
                 .setHobby(hobby)
-                .uploadImage("images/pic.jpg")
+                .uploadImage(picture)
                 .setAddress(address)
                 .setState(state)
                 .setCity(city)
@@ -44,10 +48,10 @@ public class RegistrationFormTests extends TestBase {
                 .checkResult("Student Email", email)
                 .checkResult("Gender", gender)
                 .checkResult("Mobile", mobile)
-                .checkResult("Date of Birth", date)
+                .checkResult("Date of Birth", day + " " + month + "," + year)
                 .checkResult("Subjects", subject)
                 .checkResult("Hobbies", hobby)
-                .checkResult("Picture", picName)
+                .checkResult("Picture", picture)
                 .checkResult("Address", address)
                 .checkResult("State and City", state + " " + city);
     }
