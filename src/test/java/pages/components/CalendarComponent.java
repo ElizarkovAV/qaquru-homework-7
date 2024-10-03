@@ -1,4 +1,5 @@
 package pages.components;
+import static com.codeborne.selenide.Condition.cssClass;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
@@ -9,6 +10,7 @@ public class CalendarComponent {
          $(byText(month)).click();
         $(".react-datepicker__year-select").click(); //выбор года
          $(byText(year)).click();
-        $(".react-datepicker__day--0" + day).click(); //выбор дня
+        $(".react-datepicker__day--0" + day)
+                .shouldNotHave(cssClass("react-datepicker__day--outside-month")).click(); //выбор дня
         }
     }

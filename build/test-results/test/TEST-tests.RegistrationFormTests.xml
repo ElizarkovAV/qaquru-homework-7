@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.RegistrationFormTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-10-02T18:25:45" hostname="DESKTOP-11JKOJK" time="6.543">
+<testsuite name="tests.RegistrationFormTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-10-03T05:47:39" hostname="DESKTOP-11JKOJK" time="9.741">
   <properties/>
-  <testcase name="fillRegistrationFormTest()" classname="tests.RegistrationFormTests" time="6.543"/>
+  <testcase name="fillRegistrationFormTest()" classname="tests.RegistrationFormTests" time="9.741"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\QAGURU\qaquru-homework-7\build\downloads\1727893546003_7332_1
-окт. 02, 2024 9:25:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\QAGURU\qaquru-homework-7\build\downloads\1727934459176_7356_1
+окт. 03, 2024 8:47:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 128; Please update to a Selenium version that supports CDP version 129
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=129.0.6668.71 Platform=windows
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 7.4.3
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.24.0 build revision: 748ffc9bc3
-[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -> ChromeDriver: chrome on windows (f77cae61b22306dd63ec97c3adb5994c), downloadsFolder: C:\QAGURU\qaquru-homework-7\build\downloads\1727893546003_7332_1
-[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig, webDriver=ChromeDriver: chrome on windows (f77cae61b22306dd63ec97c3adb5994c), proxy=null, downloadsFolder=C:\QAGURU\qaquru-homework-7\build\downloads\1727893546003_7332_1] in 1 [size=1]
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -> ChromeDriver: chrome on windows (f936b848e31c06533301d30e4b11530a), downloadsFolder: C:\QAGURU\qaquru-homework-7\build\downloads\1727934459176_7356_1
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig, webDriver=ChromeDriver: chrome on windows (f936b848e31c06533301d30e4b11530a), proxy=null, downloadsFolder=C:\QAGURU\qaquru-homework-7\build\downloads\1727934459176_7356_1] in 1 [size=1]
 [Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Add shutdown hook in 1 [size=1]
 ]]></system-err>
 </testsuite>
