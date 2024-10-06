@@ -1,5 +1,7 @@
 package tests;
 
+import com.codeborne.selenide.Selenide;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 import utils.RandomDataUtil;
@@ -85,5 +87,10 @@ public class RegistrationFormTests extends TestBase {
 
         //assert
         registrationPage.checkUnsuccessfulValidation();
+    }
+
+    @AfterEach
+    void afterEach() {
+        Selenide.closeWebDriver();
     }
 }
